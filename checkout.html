@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class ="container-fluid p-2 bg-warning text-center">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Viagens da vida</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end bg-warning"  id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Pacote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Taxas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contatos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">E-mail</a></li>
+                      <li><a class="dropdown-item" href="#">Whatssap</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Ligação</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-cart-check"></a></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+          <div class="container">
+            <main class="container">
+              <div class="py-5 text-center">
+                <h2>Checkout de pagamento</h2>
+              </div>          
+              <div class="row g-3">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                  <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-body-secondary">Carrinho de compras</span>
+                    <span class="badge bg-secondary rounded-pill">3</span>
+                  </h4>
+                  <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">Bolívia</h6>
+                        <small class="text-body-secondary">Passagens para Bolívia</small>
+                      </div>
+                      <span class="text-body-secondary">R$2.268,99</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">Hospedagem</h6>
+                        <small class="text-body-secondary">Reserva do hotel</small>
+                      </div>
+                      <span class="text-body-secondary">R$150,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                        <h6 class="my-0">Compra de passagens</h6>
+                        <small class="text-body-secondary">Rerva das passagens</small>
+                      </div>
+                      <span class="text-body-secondary">R$100,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                      <div class="text-success">
+                        <h6 class="my-0">Código promocional</h6>
+                        <small>VIAGEM10</small>
+                      </div>
+                      <span class="text-success">-R$250,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <span>Valor total</span>
+                      <strong>R$2.268,99</strong>
+                    </li>
+                  </ul>
+          
+                  <form class="card p-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Código promocional">
+                      <button type="submit" class="btn btn-secondary">USAR</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                  <h4 class="mb-3">Endereço de pagamento</h4>
+                  <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Digite o seu primeiro nome
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Coloque o sobrenome completo
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="username" class="form-label">Email</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text">@</span>
+                          <input type="text" class="form-control" id="username" placeholder="you@example.com" required>
+                        <div class="invalid-feedback">
+                          Coloque o email completo
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="email" class="form-label">Email secundario<span class="text-body-secondary">(opcional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                          Coloque o segundo email completo
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="address" placeholder="Rua 1234" required>
+                        <div class="invalid-feedback">
+                          Coloque o endereço completo
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address2" class="form-label">Descrição<span class="text-body-secondary">(opcional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Casa 1234">
+                      </div>
+          
+                      <div class="col-md-5">
+                        <label for="country" class="form-label">País</label>
+                        <select class="form-select" id="country" required>
+                          <option value="">Digite seu país</option>
+                          <option>Brasil</option>
+                          <option>Estados Unidos</option>
+                          <option>Peru</option>
+                          <option>Japão</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Coloque o seu país
+                        </div>
+                      </div>
+          
+                      <div class="col-md-4">
+                        <label for="state" class="form-label">Digite sua cidade</label>
+                        <select class="form-select" id="state" required>
+                          <option value="">Cidade</option>
+                          <option>Porto Velho</option>
+                        </select>
+                        <div class="invalid-feedback">
+                         Coloque a sua cidade
+                        </div>
+                      </div>
+          
+                      <div class="col-md-3">
+                        <label for="zip" class="form-label">Cep</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Coloque o seu cep
+                        </div>
+                      </div>
+                    </div>
+          
+                    <hr class="my-4">
+          
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="same-address">
+                      <label class="form-check-label" for="same-address">Seu endereço do entrega é igual ao meu endereço de cobrança</label>
+                    </div>
+          
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="save-info">
+                      <label class="form-check-label" for="save-info">Salve as informações para futuras compras</label>
+                    </div>
+          
+                    <hr class="my-4">
+          
+                    <h4 class="mb-3">Método de pagamento</h4>
+          
+                    <div class="my-3">
+                      <div class="form-check">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                        <label class="form-check-label" for="Pix">Pix</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="cash" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="Cartão de débito">Cartão de débito</label>
+                      </div>
+                      <div class="form-check">
+                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="Cartão de crédito">Cartão de crédito</label>
+                      </div>
+                    </div>
+          
+                    <div class="row gy-3">
+                      <div class="col-md-6">
+                        <label for="cc-name" class="form-label">Nome no cartão</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                        <small class="text-body-secondary">Nome da mesma forma do cartão</small>
+                        <div class="invalid-feedback">
+                          Nome inválido
+                        </div>
+                      </div>
+          
+                      <div class="col-md-6">
+                        <label for="cc-number" class="form-label">Número do cartão</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Número invállido
+                        </div>
+                      </div>
+          
+                      <div class="col-md-3">
+                        <label for="cc-expiration" class="form-label">Data de válidade</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Data inválida
+                        </div>
+                      </div>
+          
+                      <div class="col-md-3">
+                        <label for="cc-cvv" class="form-label">Código (CVV)</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Código inválido
+                        </div>
+                      </div>
+                    </div>
+          
+                    <hr class="my-4">
+          
+                    <button class="w-150 btn btn-primary btn-lg" type="submit">Confirmar pagamento</button>
+                  </form>
+                </div>
+              </div>
+            </main>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </header> <br>
+    <footer class="container-fluid bg-warning p-2 text-center">
+      <p>Desenvolvido por Hugo Stoso</p>
+  </footer>
+</body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Produto adicionado na van!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar comprando</button>
+        <button type="button" class="btn btn-success">Finalizar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
